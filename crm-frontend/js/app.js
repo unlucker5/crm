@@ -64,7 +64,6 @@ $addErrorWrapper = document.getElementById('add-error-wrapper')
 
 
 let idArray = []
-// let clients =[new Client ('Алексей', 'Иванов', 'Ильич', )]
 
 function newClientTR(client) {
     const $clientTR = document.createElement('tr'),
@@ -155,8 +154,6 @@ function newClientTR(client) {
             })
     }
 
-    // аппендикс
-
     $buttonsTD.append($changeBtn)
     $buttonsTD.append($deleteBtn)
     $creationDateTD.append($creationDate, $creationTime)
@@ -190,7 +187,6 @@ function newClientTR(client) {
     }
 
     $changeContactAdd.addEventListener('click', createContacts)
-    // $changeBtnSave.addEventListener('click', )
 
     $changeBtn.addEventListener('click', (id)=> {
         $changeModal.classList.add('open')
@@ -332,11 +328,6 @@ $searchReset.addEventListener('click', (e)=> {
     })
 
 
-// modal 
-
-
-
-
 // создание контактов 
 
 function createContacts(){
@@ -349,7 +340,6 @@ function createContacts(){
 
     $contactsTooltipText.textContent = 'Удалить контакт'
 let contactsNameArray = ['Телефон', 'Доп. телефон', 'Email' , 'VK','Facebook']
-// let contactsTypeArray = ['tel' , 'optTel', 'vk' , 'fb']
 
 for (var i = 0; i < contactsNameArray.length; i++) {
     const option = document.createElement("option");
