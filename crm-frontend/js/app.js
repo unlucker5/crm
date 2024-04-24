@@ -1,7 +1,3 @@
-// const { json } = require("stream/consumers")
-// API
-
-
 const getClients = async () => {
     const response = await fetch('http://localhost:3000/api/clients', {
         method: 'GET'
